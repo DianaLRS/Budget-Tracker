@@ -10,7 +10,7 @@ https://github.com/DianaLRS/Budget Tracker
 ![alt text](/public/assets/images/offline.png)
 
 # Description
-This app lets users keep track of their expenses. It's PWA format is perfect for offline use. 
+This app lets users keep track of their expenses. Its PWA format is perfect for travellers as can be used both online and offline for when internet is not easily accessible.  
 # Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
