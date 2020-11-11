@@ -16,14 +16,20 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
+  process.env.MONGODB_URI || 'mongodb://localhost/budget',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
   }
-);
+) .then(() => {
+  console.log("connected to DB")
+}).catch((err)=>{
+  console.log("Unable to connect to DB")
+console.log(err)
+
+});
 
 // routes
 app.use(require("./routes/api.js"));
